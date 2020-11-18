@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EntityFrameWork_webApplication.Models.Repository
 {
-    interface IEmployeeRepository
+   public interface IEmployeeRepository
     {
         Employee GetEmployee(int Id);
         IEnumerable<Employee> GetAllEmployee();
