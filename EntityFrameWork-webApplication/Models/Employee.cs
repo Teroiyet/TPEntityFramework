@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace EntityFrameWork_webApplication.Models
 {
+    public class ListeDep
+    {
+        public static List<string> Depts = new List<string>
+        { "RH", "Informatique", "Marketing", "Comptabilité" };
+    }
+
     public class Employee
     {
         public int Id { get; set; }
@@ -15,6 +21,8 @@ namespace EntityFrameWork_webApplication.Models
         public string Departement { get; set; }
         [Range(300, 5000, ErrorMessage = "Doit être entre 300 et 5000")]
         public int Salary { get; set; }
+
+        public string PhotoPath { get; set; }
 
     }
 }

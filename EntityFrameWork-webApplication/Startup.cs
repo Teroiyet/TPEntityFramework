@@ -30,6 +30,7 @@ namespace EntityFrameWork_webApplication
             services.AddDbContextPool<AppDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EmployeeDBConnection")));
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
 
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
